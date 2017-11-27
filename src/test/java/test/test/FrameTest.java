@@ -3,6 +3,7 @@ package test.test;
 import static org.junit.Assert.*;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,6 +22,16 @@ public class FrameTest {
 		Frame fr= new Frame(2,5);
 		fr.sumaPuntaje(fr.primerIntento(),fr.segundoIntento());
 		assertEquals(7,fr.getPuntos());
+	}
+	@Test
+	public void testValorMayorPrimerintento() {
+		Frame fr= new Frame(2,11);
+		Assert.assertFalse("El número debe ser menor a 10",fr.verificar(fr.primerIntento()));
+	}
+	@Test
+	public void testValorMayorSegundoIntento() {
+		Frame fr= new Frame(12,2);
+		Assert.assertFalse("El número debe ser menor a 10",fr.verificar(fr.segundoIntento()));
 	}
 
 }

@@ -21,5 +21,6 @@ public class Frame {
 	public  void sumaPuntaje(int primero, int segundo) {
 		this.puntos=primero+segundo;
 	}
+	
 
 }
