@@ -35,6 +35,23 @@ public class JuegoTest {
 	 
 	}
 	@Test 
+	public void ningunPino() {
+		Frame fr1= new Frame(0,0); 
+		Frame fr2= new Frame(0,0); 
+		Frame fr3= new Frame(0,0); 
+		Frame fr4= new Frame(0,0); 
+		Frame fr5= new Frame(0,0); 
+		Frame fr6= new Frame(0,0); 
+		Frame fr7= new Frame(0,0); 
+		Frame fr8= new Frame(0,0); 
+		Frame fr9= new Frame(0,0); 
+		Frame fr10= new Frame(0,0); 
+		Juego juego= new Juego(fr1.primerIntento(), fr1.segundoIntento(),fr2.primerIntento(), fr2.segundoIntento(), fr3.primerIntento(),
+				fr3.segundoIntento(), fr4.primerIntento(), fr4.segundoIntento(), fr5.primerIntento(), fr5.segundoIntento(), fr6.primerIntento(), fr6.segundoIntento(),
+				fr7.primerIntento(), fr7.segundoIntento(),fr8.primerIntento(), fr8.segundoIntento(),fr9.primerIntento(), fr9.segundoIntento(), fr10.primerIntento(), fr10.segundoIntento());
+		assertEquals(0, juego.sumaJuego());
+	}
+	@Test 
 	public void sumaJuegoPleno() {
 		Frame fr1= new Frame(10,0); 
 		Frame fr2= new Frame(10,0); 
