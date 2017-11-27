@@ -40,5 +40,9 @@ public class FrameTest {
 	public void testValorMenorSegundointento() {
 		Frame fr= new Frame(1,-12);
 	}
-	
-}
+	@Test
+	public void testPleno() {
+		Frame fr = new Frame(10,0);
+		assertTrue(fr.verificoPleno());
+		}
+	}
