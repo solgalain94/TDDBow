@@ -16,10 +16,10 @@ public class Frame {
 		return this.segundoIntento;
 	}
 	public int getPuntos() {
-		return 7;
+		return this.puntos;
 	}
 	public  void sumaPuntaje(int primero, int segundo) {
-	
+		this.puntos=primero+segundo;
 	}
 
 }
