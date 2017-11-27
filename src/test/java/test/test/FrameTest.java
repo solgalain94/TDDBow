@@ -42,7 +42,7 @@ public class FrameTest {
 	}
 	@Test
 	public void testPleno() {
-		Frame fr = new Frame(10,0);
+		Frame fr = new Frame(10,1);
 		assertTrue(fr.verificoPleno());
 		}
 	}

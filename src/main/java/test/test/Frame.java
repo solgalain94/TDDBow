@@ -33,5 +33,13 @@ public class Frame {
 		}
 		return retorno;
 	}
+	public boolean verificoPleno() {
+		boolean retorno=false;
+		// TODO Auto-generated method stub
+		 if (this.primerIntento==10){
+			 retorno=true;
+		 }
+		 return retorno;
+	}
 
 }
