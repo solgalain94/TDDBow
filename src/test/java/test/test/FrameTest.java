@@ -32,5 +32,13 @@ public class FrameTest {
 	public void testValorMayorSegundointento() {
 		Frame fr= new Frame(1,12);
 	}
+	@Test(expected=Error.class)
+	public void testValorMenorPrimerintento() {
+		Frame fr= new Frame(-10,11);
+	}
+	@Test(expected=Error.class)
+	public void testValorMenorSegundointento() {
+		Frame fr= new Frame(1,-12);
+	}
 	
 }
