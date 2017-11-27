@@ -23,15 +23,13 @@ public class FrameTest {
 		fr.sumaPuntaje(fr.primerIntento(),fr.segundoIntento());
 		assertEquals(7,fr.getPuntos());
 	}
-	@Test
-	public void testValorMayorPrimerintento() {
-		Frame fr= new Frame(11,2);
-		Assert.assertFalse("El número debe ser menor a 10",fr.verificar(fr.primerIntento()));
-	}
 	
-	@Test
-	public void testValorMayorSegundoIntento() {
+	@Test(expected=Error.class)
+	public void testValorMayorPrimerintento() {
+		Frame fr= new Frame(12,1);
+	}
+	@Test(expected=Error.class)
+	public void testValorMayorSegundointento() {
 		Frame fr= new Frame(1,12);
-		Assert.assertFalse("El número debe ser menor a 10",fr.verificar(fr.segundoIntento()));
 	}
 }

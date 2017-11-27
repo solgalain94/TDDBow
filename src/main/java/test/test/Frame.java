@@ -6,6 +6,10 @@ public class Frame {
 	private int segundoIntento;
 	public Frame(int primerIntento, int segundoIntento) {
 		// TODO Auto-generated constructor stub
+		if (primerIntento>10 || segundoIntento>10 || primerIntento<1 || segundoIntento<1) {
+			Error valorNoValido= new Error("Valor inválido");
+			throw valorNoValido;
+		}
 		this.primerIntento=primerIntento;
 		this.segundoIntento=segundoIntento;
 	}
