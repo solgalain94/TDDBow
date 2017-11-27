@@ -23,7 +23,12 @@ public class Frame {
 		return this.puntos;
 	}
 	public  void sumaPuntaje(int primero, int segundo) {
-		this.puntos=primero+segundo;
+		if (verificoPleno()==true) {
+			this.puntos=10;
+		}
+		else {
+			this.puntos=primero+segundo;
+		}
 	}
 	public boolean verificar(int valorIntento) {
 		// TODO Auto-generated method stub
@@ -36,7 +41,7 @@ public class Frame {
 	public boolean verificoPleno() {
 		boolean retorno=false;
 		// TODO Auto-generated method stub
-		 if (this.primerIntento==10){
+		 if (primerIntento==10){
 			 retorno=true;
 		 }
 		 return retorno;
