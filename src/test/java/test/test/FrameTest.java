@@ -32,4 +32,5 @@ public class FrameTest {
 	public void testValorMayorSegundointento() {
 		Frame fr= new Frame(1,12);
 	}
+	
 }
