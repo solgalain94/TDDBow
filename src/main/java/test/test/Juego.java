@@ -22,7 +22,18 @@ public class Juego {
 	}
 	public int getPuntos() {
 		// TODO Auto-generated method stub
-		return 72;
+		return this.puntos;
 	}
+	public Frame getFrame(int i) {
+		return ((Frame)this.fr.get(i-1));
+	}
+	public int sumaJuego() {
+		int suma=0;
+			for (Frame frame:this.fr) {
+			  suma=suma + frame.primerIntento() + frame.segundoIntento();
+			}
+		return suma;
+		}
+
 
 }
