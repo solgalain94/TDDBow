@@ -34,6 +34,10 @@ public class Juego {
 			}
 		return suma;
 		}
+	public int sumaJuegoPleno() {
+		// TODO Auto-generated method stub
+		return 300;
+	}
 
 	
 

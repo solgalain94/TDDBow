@@ -49,7 +49,9 @@ public class JuegoTest {
 		Juego juego= new Juego(fr1.primerIntento(), fr1.segundoIntento(),fr2.primerIntento(), fr2.segundoIntento(), fr3.primerIntento(),
 				fr3.segundoIntento(), fr4.primerIntento(), fr4.segundoIntento(), fr5.primerIntento(), fr5.segundoIntento(), fr6.primerIntento(), fr6.segundoIntento(),
 				fr7.primerIntento(), fr7.segundoIntento(),fr8.primerIntento(), fr8.segundoIntento(),fr9.primerIntento(), fr9.segundoIntento(), fr10.primerIntento(), fr10.segundoIntento());
-		assertEquals(100, juego.sumaJuego());
+		
+		assertEquals(300,juego.sumaJuegoPleno());
+
 	}
 
-}
+	}
