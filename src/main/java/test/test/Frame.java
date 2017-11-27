@@ -21,6 +21,13 @@ public class Frame {
 	public  void sumaPuntaje(int primero, int segundo) {
 		this.puntos=primero+segundo;
 	}
-	
+	public boolean verificar(int valorIntento) {
+		// TODO Auto-generated method stub
+		boolean retorno=true;
+		if (valorIntento>10){
+			retorno= false;
+		}
+		return retorno;
+	}
 
 }

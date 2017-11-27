@@ -25,13 +25,13 @@ public class FrameTest {
 	}
 	@Test
 	public void testValorMayorPrimerintento() {
-		Frame fr= new Frame(2,11);
+		Frame fr= new Frame(11,2);
 		Assert.assertFalse("El número debe ser menor a 10",fr.verificar(fr.primerIntento()));
 	}
+	
 	@Test
 	public void testValorMayorSegundoIntento() {
-		Frame fr= new Frame(12,2);
+		Frame fr= new Frame(1,12);
 		Assert.assertFalse("El número debe ser menor a 10",fr.verificar(fr.segundoIntento()));
 	}
-
 }
